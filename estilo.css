@@ -1,0 +1,99 @@
+/* ============================================================
+   ESTILO PRINCIPAL - Meu Portal de Entretenimento Digital
+   Autor: JOSE (Aluno - Agenda 13 - DS I)
+   ============================================================ */
+
+/* Cor de fundo geral da página */
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1e1d20;
+}
+
+/* ---------------- LAYOUT FLEXBOX ---------------- */
+
+/* Container principal: organiza as 3 seções lado a lado */
+.principal {
+    width: 100%;
+    display: flex;            /* ativa o Flexbox */
+    flex-direction: row;      /* colunas na horizontal */
+    flex-wrap: wrap;          /* quebra linha em telas pequenas */
+    justify-content: space-around;
+    padding: 10px;
+}
+
+/* Cada coluna/seção recebe flex-grow igual para dividir o espaço */
+.coluna {
+    flex: 1 1 0;              /* as 3 colunas dividem o espaço igualmente */
+    min-width: 0;             /* impede que o conteúdo alargue a coluna */
+    margin: 1%;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------- TÍTULOS E TEXTOS ---------------- */
+
+/* Classes para padronizar títulos de seção */
+.titulo-secao {
+    text-align: center;
+    color: #0677d1;
+    font-size: 1.8em;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #0677d1;
+    padding-bottom: 6px;
+}
+
+/* Classes para padronizar o texto das seções */
+.texto-secao {
+    font-size: 1em;
+    line-height: 1.4;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+/* ---------------- IMAGENS ---------------- */
+
+img {
+    width: 100%;
+    aspect-ratio: 4 / 3;      /* proporção igual para todas */
+    object-fit: cover;
+    display: block;
+    margin: 1.5% 0;
+    border-radius: 4px;
+}
+
+/* ---------------- LINKS ---------------- */
+
+a:link,
+a:visited {
+    color: #0677d1;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #034f8b;
+}
+
+/* ---------------- RODAPÉ ---------------- */
+
+.rodape {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+
+/* Imagens verticais: mostrar inteiras, sem cortar */
+img.contida-branco {
+    object-fit: contain;
+    background-color: #ffffff;   /* mesma cor do card, o PS5 tem fundo branco */
+}
+
+img.contida-cinza {
+    object-fit: contain;
+    background-color: #f0f2f5;   /* fundo neutro para o pôster */
+}

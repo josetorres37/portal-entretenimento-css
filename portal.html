@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- 1) CSS Reset (deve vir ANTES do estilo principal) -->
+    <link rel="stylesheet" type="text/css" href="reset.css">
+
+    <!-- 2) CSS Externo (folha de estilo principal) -->
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    <title>Meu Portal de Entretenimento Digital</title>
+
+    <!-- 3) CSS INTERNO (entre as tags <style> dentro de <head>) -->
+    <style>
+        /* Estilo interno aplicado diretamente nesta página */
+        .subtitulo-pagina {
+            text-align: center;
+            font-style: italic;
+            color: #555;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Título principal com CSS Inline (exigência da atividade) -->
+    <h1 style="text-align: center; color: #1e1d20; padding: 20px 0; font-size: 2.5em;">
+        Meu Portal de Entretenimento Digital
+    </h1>
+
+    <p class="subtitulo-pagina">Filmes, músicas, podcasts, games e tecnologia em um só lugar!</p>
+
+  <!--
+    OBSERVAÇÃO SOBRE AS IMAGENS:
+    As imagens do site são exibidas em uma caixa de proporção 4:3 (regra "img" do estilo.css),
+    com object-fit: cover, que recorta o excesso para todas ficarem do mesmo tamanho.
+    Duas imagens são verticais (retrato): o pôster do Dr. House (filme2.jpg) e o console
+    PS5 (games1.jpg). Com o recorte, elas ficavam cortadas (cabeça do House e parte do PS5).
+    Para corrigir, criei as classes "contida-cinza" e "contida-branco", que usam
+    object-fit: contain para mostrar a imagem inteira, preenchendo as laterais com uma cor
+    de fundo. Assim, todas as imagens mantêm o mesmo tamanho sem perder conteúdo.
+-->
+
+  <!-- Container principal com Flexbox: 3 seções lado a lado -->
+    <div class="principal">
+
+        <!-- ================= SEÇÃO 1 ================= -->
+        <section id="secao-filmes" class="coluna">
+            <h2 class="titulo-secao">Filmes e Séries</h2>
+
+            <img src="imagens/filme1.jpg" alt="Cena de filme de ficção científica">
+            <img src="imagens/filme2.jpg" alt="Pôster de série dramática" class="contida-cinza">
+            <img src="imagens/filme3.jpg" alt="Cena de filme de aventura">
+
+            <p class="texto-secao">
+                O universo audiovisual está em constante expansão. Com o streaming,
+                temos acesso a produções do mundo inteiro, de dramas premiados a
+                ficções científicas cheias de efeitos especiais.
+            </p>
+        </section>
+
+        <!-- ================= SEÇÃO 2 ================= -->
+        <section id="secao-musica" class="coluna">
+            <h2 class="titulo-secao">Música e Podcasts</h2>
+
+            <img src="imagens/musica1.jpg" alt="Pessoa ouvindo música com fones de ouvido">
+            <img src="imagens/musica2.jpg" alt="Estúdio de gravação de podcast">
+            <img src="imagens/musica3.jpg" alt="Show musical ao vivo">
+
+            <p class="texto-secao">
+                Músicas e podcasts acompanham nossa rotina. Plataformas digitais
+                permitem descobrir artistas independentes e ouvir episódios sobre
+                os mais variados temas, de tecnologia a história.
+            </p>
+        </section>
+
+        <!-- ================= SEÇÃO 3 ================= -->
+        <section id="secao-games" class="coluna">
+            <h2 class="titulo-secao">Games e Tecnologia</h2>
+
+            <img src="imagens/games1.jpg" alt="Console de videogame moderno" class="contida-branco">
+            <img src="imagens/games2.jpg" alt="Jogo de corrida em alta definição">
+            <img src="imagens/games3.jpg" alt="Setup gamer com múltiplos monitores">
+
+            <p class="texto-secao">
+                A indústria dos games movimenta bilhões e impulsiona avanços
+                tecnológicos, como placas de vídeo, realidade virtual e jogos
+                em nuvem. É diversão e inovação caminhando juntas.
+            </p>
+        </section>
+
+    </div>
+
+    <!-- Rodapé com referência das imagens (obrigatório) -->
+    <footer class="rodape">
+        <p><strong>Fonte das imagens (créditos):</strong></p>
+        <ul>
+            <li><strong>Filmes e Séries:</strong> 
+                <a href="https://www.imdb.com/pt/video/vi2804482585/" target="_blank" rel="noopener noreferrer">IMDb (Avatar)</a> | 
+                <a href="https://www.amazon.com.au/DOKTor-Decorative-Painting-Posters-12x18inch/dp/B0BYX57T6V" target="_blank" rel="noopener noreferrer">Amazon (Dr. House)</a> | 
+                <a href="https://www.tudocelular.com/curiosidade/noticias/n164756/monster-hunter-primeiro-trailer-oficial.html" target="_blank" rel="noopener noreferrer">Tudo Celular (Monster Hunter)</a>
+            </li>
+            <li><strong>Música e Podcasts:</strong> 
+                <a href="https://open.spotify.com/intl-pt/artist/4jIhbQQAZbR4j4MxqpaQNn" target="_blank" rel="noopener noreferrer">Spotify (Fones de ouvido)</a> | 
+                <a href="https://www.minhavida.com.br/materias/materia-16710" target="_blank" rel="noopener noreferrer">Minha Vida (Show)</a> | 
+                <a href="https://portalprudentino.com.br/noticia/noticias/presidente-prudente-noticias/fundacao-inova-inaugura-estudio-para-gravacao-de-podcasts" target="_blank" rel="noopener noreferrer">Portal Prudentino (Podcast)</a>
+            </li>
+            <li><strong>Games e Tecnologia:</strong> 
+                <a href="https://www.playstation.com/pt-br/ps5/" target="_blank" rel="noopener noreferrer">PlayStation (Console PS5)</a> | 
+                <a href="https://store.steampowered.com/app/2805000/The_Crew_Motorfest__Year_1_Pass/?l=brazilian" target="_blank" rel="noopener noreferrer">Steam (Jogo de corrida)</a> | 
+                <a href="https://unsplash.com/pt-br/fotografias/uma-secretaria-com-um-computador-e-uma-cadeira-de-jogos-WNHpGX9lSGQ" target="_blank" rel="noopener noreferrer">Unsplash (Setup gamer)</a>
+            </li>
+        </ul>
+    </footer>
