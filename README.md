@@ -56,7 +56,7 @@ Conforme os critérios de avaliação da atividade, o desenvolvimento foi valida
 ### Etapa 1 – Estrutura HTML
 > *Validação das tags `<div>`, `<h1>` e `<img>`.*
 > 
-> ![Etapa 1 - Estrutura](pirnt/1.png)
+> ![Etapa 1 - Estrutura](print/1.png)
 
 ### Etapa 2 – CSS Interno e Externo
 > *Definição de estilos específicos usando classes e IDs.*
